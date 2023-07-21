@@ -199,9 +199,7 @@ app.put('/places', async(req,res)=>{
     
     jwt.verify(token , jwtSecret ,{} , async(err,userData)=>{
         if(err) throw err;
-
-        
-       
+     
         
         const placeDoc = await Place.findById(id);
 

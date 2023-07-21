@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 //import { PropTypes } from "prop-types"
+import { PropTypes } from "prop-types";
 
 export default function Perks ({selected , onChange}) {
 
@@ -69,7 +70,8 @@ export default function Perks ({selected , onChange}) {
     )
 }
 
-// Perks.propTypes = {
-//     selected : PropTypes.bool.isRequired ,
-//     onChange : PropTypes.bool.isRequired,
-// }
+
+Perks.propTypes = {
+    selected: PropTypes.array.isRequired,
+    onChange: PropTypes.func.isRequired,
+  };
